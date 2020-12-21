@@ -1,144 +1,164 @@
-<!--Эммет команда для создания структуры-->
-<!--html[lang="en"]>(head>meta[charset="UTF-8"]+meta:vp+link:css+title{Document})+(body>(header>img[src="img/gerb_makeevka.png"]#imgtitle+h1{Макеевка}+nav.menu>ul>(li>(i.fafa-homefa-fw)+a[href="index.html"]{Главная}+(li>a:link{Страница$})*4))+(div#history>(img[src="img/img1.jpg"][alt="Стелла"]#imgmain+q[lang=fr]{Макеевка}+p{lorem}+hr+p+(img[src=img/img$.jpg]#imgtext1)*2+h2{Последние события}))+(div.block>(figure.baha1493>(div.image>img[src="img/img2.jpg"][alt="ls-sample1"])+figcaption>(div.date>span.day{28}+span.month{Oct})+h3{Спартакиада}+p{lorem}^a:link^figure.baha1493hover>(div.image>(img[src="img/img4.jpg"][alt="ls-sample2"]))+figcaption>(div.date>(span.date{17}+span.month{Nov}))+h3{Благоустройство}+p{lorem}^a:link^figure.baha1493>(div.image>img[src="img/img5.jpg"][alt="ls-sample3"])+figcaption>(div.date>(span.day{01}+span.month{Dec}))+h3{Заседание}+p{lorem}^a:link))+footer>p{Юрий Голинковский})-->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+	<title>Lab5</title>
 </head>
-
 <body>
-  <header>
-    <img id="imgtitle" src="img/gerb_makeevka.png" alt="" />
-    <h1>Макеевка</h1>
-    <nav class="menu">
-      <ul>
-        <li><i class="fa fa-home fa-fw"></i><a href="index.html">Главная</a></li>
-        <li><a href="history.html">История</a></li>
-        <li><a href="Infrastructure.html">Инфраструктура</a></li>
-        <li><a href="culture.html">Культура</a></li>
-        <li><a href="feedback.html">Обратная связь</a></li>
-      </ul>
-    </nav>
-  </header>
+ <div id="slider-wrap">
+    <div id="active-slide">
+        <div id="slider">
+            <div class="slide"><img src="images/nature1.jpg"></div>
+            <div class="slide"><img src="images/nature2.jpg"></div>
+            <div class="slide"><img src="images/nature3.jpg"></div>
+        </div>
+    </div>
+</div>
 
-  <div id="history">
-    <img id="imgmain" src="img/img1.jpg" alt="Стелла на въезде в город" />
-    <q lang="fr">Макеевка - город с древней историей.
-    </q>
-    <p>
-      <b> Макеевка</b> основанa в 1690 г. История города начинается с казацких поселений Ясиновка, Нижняя Крынка,
-      Землянки, Макеевка, Щеглово,
-      расположенных на стыке Екатеринославской губернии и Области Войска Донского, когда по указу Азовской губернской
-      канцелярии стародавнее запорожское поселение Землянки было преобразовано в государственную воинскую слободу. В
-      1787 году
-      основана слобода Макеевка, которая в 1815 г. стала центром вновь созданной одноименной волости. К началу 90-х
-      годов XIX
-      века на территории Макеевской волости, в связи с открытием и началом промышленной разработки залежей каменного
-      угля,
-      формируется Макеевский горный район и его административный, торгово-промышленный и культурный центр - поселок
-      Дмитриевский, который со временем стал основой города Макеевка.
-      Источник: http://makeyevka.ru/o-gorode/istoricheskaya-spravka <br />
-      В июле 1917 года поселок Дмитриевский получил статус города и стал центром Макеевского района. В феврале 1919 года
-      Макеевский район был включен в состав Донецкой губернии. В апреле 1922 года район, как
-      территориально-административная
-      единица ликвидирован, а вся исполнительная власть перешла к городскому совету. В 1931 году город Дмитриевск
-      переименован
-      в город Макеевка.
-      Источник: http://makeyevka.ru/o-gorode/istoricheskaya-spravka <br />
-      Макеевка - город с древней историей. На территории Макеевки найдено 140 памятников археологии, среди которых один
-      из
-      древнейших в Украине - каменное рубило эпохи раннего палеолита. В городе зафиксировано 3 поселения и 137 курганов,
-      оставленных кочевыми народами: скифами, сарматами, половцами и др.
-      Источник: http://makeyevka.ru/o-gorode/istoricheskaya-spravka
-    </p>
-    <hr />
-    <p>
-      <img src="img/img2.jpg" alt="" id="imgtext1" />
-      <img src="img/img3.jpg" alt="" id="imgtext1">
-      В середине XIX в. в Макеевке открыты залежи коксующегося угля. Первая шахта построена в 1859 г. К 90-м годам XIX
-      в.
-      сложился Макеевский горный район с развитой сетью угольных предприятий, который в 1904 г. реорганизован в горный
-      округ.
-      В 1907 г. открыта первая в России районная горноспасательная станция. На базе угледобычи развиваются
-      железнодорожный
-      транспорт, металлургическая, труболитейная и коксохимическая промышленность.
-      Источник: http://makeyevka.ru/o-gorode/istoricheskaya-spravka Стремительное развитие города, его индустриальной
-      мощи связано с довоенным десятилетием. В Макеевке на металлургическом
-      заводе построены первые отечественные механизированная доменная печь и блюминг; открыт единственный в стране
-      научно-исследовательский институт по безопасности работ в горной промышленности и др. К 1941 г. в городе действует
-      60
-      предприятий. Макеевка производит 12% общесоюзной добычи угля и 10% - выплавки металла. В годы второй мировой войны
-      город
-      был разрушен, его экономике нанесен громадный ущерб. Более 30 тыс. мирных жителей погибли в результате массовых
-      расстрелов и повешений. 15 тыс. насильственно угнаны в Германию, 16611 солдат и офицеров погибли на фронтах. 64
-      макеевчанина за героизм и мужество удостоены звания Героя Советского Союза. Указом Президиума Верховного Совета
-      СССР от
-      6 сентября 1977 года за большие успехи, достигнутые трудящимися города в хозяйственном и культурном строительстве,
-      активное участие в борьбе с немецко-фашистскими захватчиками и в годы Великой Отечественной войны и в связи с
-      200-летием
-      со дня основания (тогда датой основания считался год 1777) город Макеевка Донецкой области награжден орденом
-      Трудового
-      Красного Знамени.
-      Источник: http://makeyevka.ru/o-gorode/istoricheskaya-spravka
-    </p>
-  </div>
-  <h2>Послеедние события города</h2>
-  <div class="block">
-    <figure class="baha1493">
-      <div class="image"><img src="img/img2.jpg" alt="ls-sample1" />
-      </div>
-      <figcaption>
-        <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
-        <h3>Спартакиада</h3>
-        <p>
+<div class="task2Block">
+ <input id="tab1" type="radio" name="tabs" checked />
+ <label for="tab1" title="Вкладка 1">Вкладка 1</label>
 
-          В Червоногвардейском районе в Макеевском медицинском колледже прошла спартакиада «В здоровом теле – здоровый
-          дух!
+ <input id="tab2" type="radio" name="tabs" />
+ <label for="tab2" title="Вкладка 2">Вкладка 2</label>
 
-        </p>
+ <input id="tab3" type="radio" name="tabs" />
+ <label for="tab3" title="Вкладка 3">Вкладка 3</label>
 
-      </figcaption>
-      <a href="#"></a>
-    </figure>
-    <figure class="baha1493 hover">
-      <div class="image"><img src="img/img4.jpg" alt="ls-sample2" />
-      </div>
-      <figcaption>
-        <div class="date"><span class="day">17</span><span class="month">Nov</span></div>
-        <h3>Благоустройство</h3>
-        <p>
+ <section id="content1">
+   <p>
+	 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nemo
+	 accusantium, mollitia, blanditiis vitae impedit perspiciatis laborum
+	 ab quo incidunt harum at veniam deleniti dolorem nulla, voluptates
+	 debitis consequatur nihil?
+   </p>
+   <img src="images/nature1.jpg" />
+ </section>
+ <section id="content2">
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+   <img src="images/nature2.jpg" />
+ </section>
+ <section id="content3">
+   <p>
+	 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+	 magnam ab, ipsa, omnis enim possimus cumque nulla ut maiores, dolores
+	 animi odit! Voluptatum beatae repudiandae, molestias dolore accusamus
+	 nihil laboriosam!
+   </p>
+   <img src="images/nature3.jpg" />
+ </section>
+</div>
 
-          Ежедневно коммунальными службами района и города выполняются работы по уборке улиц, скверов, парковой зоны.
-        </p>
-      </figcaption>
-      <a href="#"></a>
-    </figure>
-    <figure class="baha1493">
-      <div class="image"><img src="img/img5.jpg" alt="ls-sample3" />
-      </div>
-      <figcaption>
-        <div class="date"><span class="day">01</span><span class="month">Dec</span></div>
-        <h3>Заседание</h3>
-        <p>
+<div class="task3Block">
+<p>
+ <label for="amount">Диапазон значений:</label>
+ <input
+   type="text"
+   id="amount"
+   readonly
+   style="border: 0; color: #1f5e0f; font-weight: bold"
+ />
+</p>
+<div id="slider-range"></div>
+</div>
 
-          25 сентября в администрации Горняцкого района состоялось заседание Ведомственной рабочей группы по вопросам
-          погашения
-          задолженности по заработной плате,
-        </p>
+<div class="task4Block">
+<div class="imageTask4"><a href="#"><img src="images/nature3.jpg" /></a></div>
+</div>
 
-      </figcaption>
-      <a href="#"></a>
-    </figure>
-  </div>
-  </div>
-  </div>
-  <footer>
-    <p>Юрий Голинковский</p>
-  </footer>
+<div class="task5Block">
+<a href="#" class="js-open-modal" data-modal="1">Перетаскиваемое окно</a>
+<div class="modal" data-modal="1">
+	<div class="ui-widget-content" id="draggable">
+		<div class="header_modal">
+			<p class="modal__title">Заголовок окна</p>
+			<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>			
+		</div>
+		<div class="content_modal">
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus harum sit, earum consectetur quos, est debitis asperiores veritatis quas eum, iusto neque? Quo ea repellendus vero quaerat adipisci dolore.</p>
+		</div>
+	</div>
+</div>
+<div class="overlay js-overlay-modal"></div>
+</div>
+
+<div class="task6Block">
+<form class="contact_form" action="#" method="post" name="contact_form">
+    <ul>   
+		<li>
+			<h2>Форма Авторизации</h2>			
+	   </li>   
+        <li>
+            <input type="email" name="email" placeholder="EmailName@mail.ru" required />
+            <span class="form_hint">Например "User@mail.ru"</span>
+        </li>
+        <li>
+            <input type="password" name="password" placeholder="Password" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{7,}$"/>
+            <span class="form_hint">Минимум 7 символов(цифра, разные регистры)"</span>
+        </li>
+        <li>
+            <button class="submit" type="submit">Отправить</button>
+        </li>
+    </ul>
+</form>
+</div>
+
+<div class="task7Block">
+<nav>
+	<div class="wrapper">
+		<div class="menuToggle icon">
+			<div class="hamburger"></div>
+		</div>	
+		<ul class="menu">
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Страница1</a></li>
+			<li><a href="#">Страница2</a></li>
+			<li><a href="#">О нас</a></li>
+		</ul>
+	</div>
+</nav>
+<section>
+	<div class="wrapper">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti facere quia tempore aliquid, modi numquam voluptates quibusdam odit cum magni, distinctio sit inventore nisi cupiditate quidem ducimus dolores voluptate consectetur.
+	</div>
+</section>
+</div>
+
+<div class="task8Block">
+<ul id="menu">	
+	<li><span>Пункт меню 1</span>
+	   <ul>
+		<li><a href="">подпункт 1</a></li>
+		<li><a href="">подпункт 2</a></li>
+		<li><a href="">подпункт 3</a></li>
+		<li><a href="">подпункт 4</a></li>
+		<li><a href="">подпункт 5</a></li>
+	   </ul>
+	</li>
+	<li><span>Пункт меню 2</span>
+	   <ul>
+		   <li><a href="">подпункт 1</a></li>
+		   <li><a href="">подпункт 2</a></li>
+		   <li><a href="">подпункт 3</a></li>
+		   <li><a href="">подпункт 4</a></li>
+		   <li><a href="">подпункт 5</a></li>
+	   </ul>
+	</li>
+	 <li><span>Пункт меню 3</span>
+	   <ul>
+		   <li><a href="">подпункт 1</a></li>
+		   <li><a href="">подпункт 2</a></li>
+		   <li><a href="">подпункт 3</a></li>
+	   </ul>
+	</li>
+</ul>
+</div>
 </body>
-
+<script src="main.js"></script>
 </html>
